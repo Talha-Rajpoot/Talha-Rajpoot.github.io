@@ -20,14 +20,16 @@ export const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFormdata({ loading: true });
-
     const templateParams = {
-      from_name: formData.email,
-      user_name: formData.name,
-      to_name: contactConfig.YOUR_EMAIL,
+      from_name: formData.name,
+      from_email: formData.email,
+      to_name: "Muhammad Talha",
+      to_email: contactConfig.YOUR_EMAIL,
+      reply_to: formData.email,
       message: formData.message,
     };
+
+    setFormdata({ ...formData, loading: true });
 
     emailjs
       .send(
