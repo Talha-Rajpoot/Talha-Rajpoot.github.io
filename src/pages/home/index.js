@@ -4,81 +4,107 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export const Home = () => {
   return (
     <HelmetProvider>
-      <section id="home" className="home">
+      <section id="home" className="home-3d">
         <Helmet>
           <meta charSet="utf-8" />
-          <title> {meta.title}</title>
+          <title>{meta.title}</title>
           <meta name="description" content={meta.description} />
         </Helmet>
-        <div className="hero">
-          {/* Background glow effects */}
-          <div className="hero__glow hero__glow--1"></div>
-          <div className="hero__glow hero__glow--2"></div>
 
-          <div className="hero__content">
-            {/* Profile photo */}
-            <div className="hero__avatar-wrapper">
-              <div className="hero__avatar-ring"></div>
-              <img
-                className="hero__avatar"
-                src={introdata.your_img_url}
-                alt={meta.title}
-              />
-              <div className="hero__status">
-                <span className="hero__status-dot"></span>
-                Available for work
-              </div>
+        <motion.div
+          className="hero-3d"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          {/* Avatar */}
+          <motion.div
+            className="hero-3d__avatar"
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.8, type: "spring" }}
+          >
+            <div className="hero-3d__avatar-glow"></div>
+            <img src={introdata.your_img_url} alt={meta.title} />
+            <div className="hero-3d__status">
+              <span className="hero-3d__status-dot"></span>
+              Available for work
             </div>
+          </motion.div>
 
-            {/* Greeting */}
-            <p className="hero__greeting">{introdata.title}</p>
+          {/* Greeting */}
+          <motion.p
+            className="hero-3d__label"
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.4 }}
+          >
+            {introdata.title}
+          </motion.p>
 
-            {/* Big typewriter heading */}
-            <h1 className="hero__heading">
-              <Typewriter
-                options={{
-                  strings: [
-                    introdata.animated.first,
-                    introdata.animated.second,
-                    introdata.animated.third,
-                  ],
-                  autoStart: true,
-                  loop: true,
-                  deleteSpeed: 10,
-                }}
-              />
-            </h1>
+          {/* Typewriter */}
+          <motion.h1
+            className="hero-3d__heading"
+            initial={{ y: 30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.6 }}
+          >
+            <Typewriter
+              options={{
+                strings: [
+                  introdata.animated.first,
+                  introdata.animated.second,
+                  introdata.animated.third,
+                ],
+                autoStart: true,
+                loop: true,
+                deleteSpeed: 10,
+              }}
+            />
+          </motion.h1>
 
-            {/* Description */}
-            <p className="hero__desc">{introdata.description}</p>
+          {/* Description */}
+          <motion.p
+            className="hero-3d__desc"
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.8 }}
+          >
+            {introdata.description}
+          </motion.p>
 
-            {/* Tech stack pills */}
-            <div className="hero__stack">
-              <span className="hero__stack-pill">Flutter</span>
-              <span className="hero__stack-pill">React Native</span>
-              <span className="hero__stack-pill">Node.js</span>
-              <span className="hero__stack-pill">FastAPI</span>
-            </div>
+          {/* Tech pills */}
+          <motion.div
+            className="hero-3d__stack"
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 1 }}
+          >
+            {["Flutter", "React Native", "Node.js", "FastAPI"].map((t, i) => (
+              <span key={i} className="hero-3d__pill">{t}</span>
+            ))}
+          </motion.div>
 
-            {/* CTAs */}
-            <div className="hero__actions">
-              <Link to="/portfolio" className="text_2">
-                <div id="button_p" className="ac_btn btn">
-                  My Portfolio
-                </div>
-              </Link>
-              <Link to="/contact">
-                <div id="button_h" className="ac_btn btn">
-                  Contact Me
-                </div>
-              </Link>
-            </div>
-          </div>
-        </div>
+          {/* CTA */}
+          <motion.div
+            className="hero-3d__actions"
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 1.2 }}
+          >
+            <Link to="/portfolio" className="hero-3d__btn hero-3d__btn--primary">
+              My Portfolio
+            </Link>
+            <Link to="/contact" className="hero-3d__btn hero-3d__btn--secondary">
+              Contact Me
+            </Link>
+          </motion.div>
+        </motion.div>
       </section>
     </HelmetProvider>
   );

@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import * as emailjs from "emailjs-com";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { meta } from "../../content_option";
-import { Container, Row, Col, Alert } from "react-bootstrap";
-import { contactConfig } from "../../content_option";
-import { ScrollReveal } from "../../hooks/useScrollReveal";
+import { meta, contactConfig } from "../../content_option";
+import { motion } from "framer-motion";
 
 export const ContactUs = () => {
   const [formData, setFormdata] = useState({
@@ -37,7 +35,6 @@ export const ContactUs = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
           setFormdata({
             loading: false,
             alertmessage: "Message sent successfully! Thank you for reaching out.",
@@ -46,13 +43,11 @@ export const ContactUs = () => {
           });
         },
         (error) => {
-          console.log(error.text);
           setFormdata({
             alertmessage: `Failed to send! ${error.text}`,
             variant: "danger",
             show: true,
           });
-          document.getElementsByClassName("co_alert")[0].scrollIntoView();
         }
       );
   };
@@ -66,107 +61,99 @@ export const ContactUs = () => {
 
   return (
     <HelmetProvider>
-      <Container>
+      <div className="contact-3d">
         <Helmet>
           <meta charSet="utf-8" />
           <title>{meta.title} | Contact</title>
           <meta name="description" content={meta.description} />
         </Helmet>
-        <Row className="mb-5 mt-3 pt-md-3">
-          <Col lg="8">
-            <ScrollReveal>
-              <h1 className="display-4 mb-4">Contact Me</h1>
-              <hr className="t_border my-4 ml-0 text-left" />
-            </ScrollReveal>
-          </Col>
-        </Row>
-        <Row className="sec_sp">
-          <Col lg="12">
-            <Alert
-              variant={formData.variant}
-              className={`rounded-0 co_alert ${
-                formData.show ? "d-block" : "d-none"
-              }`}
-              onClose={() => setFormdata({ show: false })}
-              dismissible
+
+        <div className="contact-3d__container">
+          <motion.h1
+            className="contact-3d__title"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            Contact Me
+          </motion.h1>
+
+          {formData.show && (
+            <motion.div
+              className={`contact-3d__alert contact-3d__alert--${formData.variant}`}
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              onClick={() => setFormdata({ ...formData, show: false })}
             >
-              <p className="my-0">{formData.alertmessage}</p>
-            </Alert>
-          </Col>
-          <Col lg="5" className="mb-5">
-            <ScrollReveal>
-              <h3 className="color_sec py-4">Get in touch</h3>
-              <address>
-                <strong>Email:</strong>{" "}
-                <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
-                  {contactConfig.YOUR_EMAIL}
-                </a>
-                <br />
-                <br />
-                {contactConfig.hasOwnProperty("YOUR_FONE") ? (
-                  <p>
-                    <strong>Phone:</strong> {contactConfig.YOUR_FONE}
-                  </p>
-                ) : (
-                  ""
-                )}
-              </address>
-              <p>{contactConfig.description}</p>
-            </ScrollReveal>
-          </Col>
-          <Col lg="7" className="d-flex align-items-center">
-            <ScrollReveal delay={200} className="w-100">
-              <form onSubmit={handleSubmit} className="contact__form w-100">
-                <Row>
-                  <Col lg="6" className="form-group">
-                    <input
-                      className="form-control"
-                      id="name"
-                      name="name"
-                      placeholder="Name"
-                      value={formData.name || ""}
-                      type="text"
-                      required
-                      onChange={handleChange}
-                    />
-                  </Col>
-                  <Col lg="6" className="form-group">
-                    <input
-                      className="form-control rounded-0"
-                      id="email"
-                      name="email"
-                      placeholder="Email"
-                      type="email"
-                      value={formData.email || ""}
-                      required
-                      onChange={handleChange}
-                    />
-                  </Col>
-                </Row>
-                <textarea
-                  className="form-control rounded-0"
-                  id="message"
-                  name="message"
-                  placeholder="Message"
-                  rows="5"
-                  value={formData.message}
-                  onChange={handleChange}
+              {formData.alertmessage}
+            </motion.div>
+          )}
+
+          <div className="contact-3d__grid">
+            <motion.div
+              className="contact-3d__info"
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.2, duration: 0.6 }}
+            >
+              <h3>Get in touch</h3>
+              <div className="contact-3d__detail">
+                <span className="contact-3d__detail-label">Email</span>
+                <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>{contactConfig.YOUR_EMAIL}</a>
+              </div>
+              {contactConfig.YOUR_FONE && (
+                <div className="contact-3d__detail">
+                  <span className="contact-3d__detail-label">Phone</span>
+                  <p>{contactConfig.YOUR_FONE}</p>
+                </div>
+              )}
+              <p className="contact-3d__desc">{contactConfig.description}</p>
+            </motion.div>
+
+            <motion.form
+              onSubmit={handleSubmit}
+              className="contact-3d__form"
+              initial={{ opacity: 0, x: 30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.4, duration: 0.6 }}
+            >
+              <div className="contact-3d__form-row">
+                <input
+                  className="contact-3d__input"
+                  name="name"
+                  placeholder="Your Name"
+                  value={formData.name || ""}
+                  type="text"
                   required
-                ></textarea>
-                <br />
-                <Row>
-                  <Col lg="12" className="form-group">
-                    <button className="btn ac_btn" type="submit">
-                      {formData.loading ? "Sending..." : "Send"}
-                    </button>
-                  </Col>
-                </Row>
-              </form>
-            </ScrollReveal>
-          </Col>
-        </Row>
-      </Container>
-      <div className={formData.loading ? "loading-bar" : "d-none"}></div>
+                  onChange={handleChange}
+                />
+                <input
+                  className="contact-3d__input"
+                  name="email"
+                  placeholder="Your Email"
+                  type="email"
+                  value={formData.email || ""}
+                  required
+                  onChange={handleChange}
+                />
+              </div>
+              <textarea
+                className="contact-3d__input contact-3d__textarea"
+                name="message"
+                placeholder="Your Message"
+                rows="5"
+                value={formData.message}
+                onChange={handleChange}
+                required
+              />
+              <button className="contact-3d__submit" type="submit">
+                {formData.loading ? "Sending..." : "Send Message"}
+              </button>
+            </motion.form>
+          </div>
+        </div>
+      </div>
+      {formData.loading && <div className="contact-3d__loading" />}
     </HelmetProvider>
   );
 };
