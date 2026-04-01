@@ -21,12 +21,9 @@ export const ContactUs = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const templateParams = {
-      from_name: formData.name,
-      from_email: formData.email,
-      to_name: "Muhammad Talha",
-      to_email: contactConfig.YOUR_EMAIL,
-      reply_to: formData.email,
-      message: formData.message,
+      name: formData.name,
+      title: formData.message,
+      email: formData.email,
     };
 
     setFormdata({ ...formData, loading: true });
