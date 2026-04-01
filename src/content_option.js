@@ -78,49 +78,49 @@ const services = [
 const dataportfolio = [
   {
     img: "https://picsum.photos/600/400?random=1",
-    title: "E-Commerce Mobile App",
+    title: "RPPA App",
     description:
-      "A full-featured shopping app with real-time inventory, payment integration, and push notifications.",
+      "A comprehensive mobile application with real-time data management, user authentication, and seamless cross-platform experience.",
     tags: ["Flutter", "Node.js", "Firebase"],
     link: "#",
   },
   {
     img: "https://picsum.photos/600/400?random=2",
-    title: "Food Delivery Platform",
+    title: "ICore Career Hub App",
     description:
-      "Cross-platform delivery app with live tracking, restaurant dashboard, and order management system.",
+      "Career management platform connecting job seekers with opportunities, featuring profile building, job matching, and application tracking.",
     tags: ["React Native", "FastAPI", "PostgreSQL"],
     link: "#",
   },
   {
     img: "https://picsum.photos/600/400?random=3",
-    title: "Fitness Tracker App",
+    title: "Diet App",
     description:
-      "Health and workout tracking application with custom plans, progress charts, and social features.",
+      "Health and nutrition tracking app with personalized meal plans, calorie counter, progress monitoring, and dietary recommendations.",
     tags: ["Flutter", "Dart", "Firebase"],
     link: "#",
   },
   {
     img: "https://picsum.photos/600/400?random=4",
-    title: "Real Estate Finder",
+    title: "Africa Travel Hub App",
     description:
-      "Property listing app with map integration, virtual tours, and advanced search filters.",
+      "Travel companion app for exploring Africa with destination guides, booking integration, itinerary planning, and local experiences.",
     tags: ["React Native", "Node.js", "MongoDB"],
     link: "#",
   },
   {
     img: "https://picsum.photos/600/400?random=5",
-    title: "Task Management Tool",
+    title: "Hit Local Hub App",
     description:
-      "Collaborative project management app with kanban boards, team chat, and file sharing.",
+      "Local business discovery platform connecting users with nearby services, reviews, deals, and community engagement features.",
     tags: ["Flutter", "FastAPI", "WebSocket"],
     link: "#",
   },
   {
     img: "https://picsum.photos/600/400?random=6",
-    title: "Social Media Dashboard",
+    title: "Karim Admin Panel",
     description:
-      "Analytics dashboard for social media managers with scheduling, insights, and multi-platform support.",
+      "Feature-rich admin dashboard with analytics, user management, content moderation, and real-time reporting capabilities.",
     tags: ["React", "Node.js", "Chart.js"],
     link: "#",
   },
