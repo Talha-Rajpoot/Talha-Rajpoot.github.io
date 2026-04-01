@@ -1,38 +1,39 @@
-### Description
+# Muhammad Talha - Portfolio
 
-A simple portfolio template for developer/designers built with React. 
+Personal portfolio website showcasing my work as a Full Stack Mobile App Developer.
 
-### [live preview](https://ubaimutl.github.io/react-portfolio/)
+### [Live Preview](https://talha-rajpoot.github.io)
 
-[![react portfoiio](src/assets/images/react%20portfolio%20gif.gif)](https://ubaimutl.github.io/react-portfolio/)
+### Tech Stack
+
+- **Frontend:** Flutter, React Native, React
+- **Backend:** Node.js, Python FastAPI
+- **Languages:** Dart, JavaScript, Python
 
 ### Features
 
-- Fully Responsive
-- Multi-Page Layout
-- Contact Form With EmailJs
-- React-Bootstrap
-- Edit Content From One Place
+- Fully Responsive (Mobile-first design)
+- Dark / Light Mode
+- Scroll Reveal Animations
+- Glassmorphism UI
+- Contact Form with EmailJS
+- GitHub Pages Deployment
 
 ### Setup
 
-Get the code
+```bash
+git clone https://github.com/Talha-Rajpoot/Talha-Rajpoot.github.io.git
+npm install
+npm start
+```
 
-<pre>git clone https://github.com/ubaimutl/react-portfolio.git</pre>
- 
-Install required dependencies
+### Deployment
 
-<pre>yarn install</pre>
+```bash
+npm run deploy
+```
 
+### Contact
 
-Start the server
-
-<pre>yarn start</pre>
-
-### More
-
-Modify pages content in  `src/content_option.js`.
-
-### Thanks
-
-If you like this portfolio template don't forget give it a ⭐ 
+- **Email:** muhammadtalha0708@gmail.com
+- **Phone:** 03211432292
