@@ -113,3 +113,21 @@
         height: 1.4em;
     }
 }
+
+/* ===== Light Mode ===== */
+[data-theme="light"] .stick_follow_icon svg {
+    fill: rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="light"] .stick_follow_icon ul li:hover svg {
+    fill: #5a8a00;
+    filter: drop-shadow(0 0 6px rgba(90, 138, 0, 0.3));
+}
+
+[data-theme="light"] .stick_follow_icon p {
+    color: rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="light"] .stick_follow_icon p:after {
+    background-color: rgba(0, 0, 0, 0.15);
+}
