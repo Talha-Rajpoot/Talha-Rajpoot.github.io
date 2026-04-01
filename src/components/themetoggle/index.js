@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import "./style.css";
 
 const Themetoggle = () => {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
   const [pulled, setPulled] = useState(false);
   const ropeRef = useRef(null);
 
