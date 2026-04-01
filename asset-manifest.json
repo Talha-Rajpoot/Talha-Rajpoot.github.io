@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/React-portfolio-site/static/css/main.48ba33da.css",
-    "main.js": "/React-portfolio-site/static/js/main.5fe8f60d.js",
-    "static/media/IMG-20250320-WA0007.webp": "/React-portfolio-site/static/media/IMG-20250320-WA0007.320e68d845f2f6182309.webp",
-    "index.html": "/React-portfolio-site/index.html"
+    "main.css": "/static/css/main.48ba33da.css",
+    "main.js": "/static/js/main.e22ecb77.js",
+    "static/media/IMG-20250320-WA0007.webp": "/static/media/IMG-20250320-WA0007.320e68d845f2f6182309.webp",
+    "index.html": "/index.html"
   },
   "entrypoints": [
     "static/css/main.48ba33da.css",
-    "static/js/main.5fe8f60d.js"
+    "static/js/main.e22ecb77.js"
   ]
 }
