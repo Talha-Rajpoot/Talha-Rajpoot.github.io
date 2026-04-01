@@ -13,7 +13,42 @@
 
 @media (max-width: 768px) {
     .lamp-toggle {
-        left: 24px;
+        left: 16px;
+    }
+
+    .lamp-toggle__wire {
+        height: 25px;
+    }
+
+    .lamp-toggle__handle {
+        height: 65px;
+        width: 4px;
+    }
+
+    .lamp-toggle__handle::after {
+        width: 20px;
+        height: 20px;
+        bottom: -16px;
+        border-width: 2.5px;
+    }
+
+    .lamp-toggle__handle::before {
+        width: 10px;
+        height: 6px;
+    }
+
+    .lamp-toggle__bulb-cap {
+        width: 22px;
+        height: 14px;
+    }
+
+    .lamp-toggle__bulb-glass {
+        width: 30px;
+        height: 36px;
+    }
+
+    .lamp-toggle::after {
+        display: none;
     }
 }
 
