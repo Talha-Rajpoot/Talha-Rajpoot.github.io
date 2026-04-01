@@ -7,6 +7,7 @@ import {
 import withRouter from "../hooks/withRouter";
 import AppRoutes from "./routes";
 import Headermain from "../header";
+import Themetoggle from "../components/themetoggle";
 import Scene from "../components/3d/Scene";
 import "./App.css";
 
@@ -23,6 +24,7 @@ export default function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <Scene />
+      <Themetoggle />
       <ScrollToTop>
         <Headermain />
         <AppRoutes />

@@ -5,6 +5,7 @@ import { EffectComposer, Bloom, ChromaticAberration } from "@react-three/postpro
 import { BlendFunction } from "postprocessing";
 import ParticleField from "./ParticleField";
 import FloatingObjects from "./FloatingObjects";
+import FallingStars from "./FallingStars";
 
 function Effects() {
   return (
@@ -42,6 +43,7 @@ function SceneContent({ isDark }) {
       <Suspense fallback={null}>
         <ParticleField count={1500} color={particleColor} opacity={isDark ? 0.6 : 0.35} />
         <FloatingObjects isDark={isDark} />
+        {isDark && <FallingStars count={80} />}
         <Preload all />
       </Suspense>
       {isDark && <Effects />}

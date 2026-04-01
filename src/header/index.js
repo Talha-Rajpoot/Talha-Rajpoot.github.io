@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./style.css";
 import { Link, useLocation } from "react-router-dom";
 import { logotext } from "../content_option";
-import Themetoggle from "../components/themetoggle";
 import { VscGrabber, VscClose } from "react-icons/vsc";
 
 const Headermain = () => {
@@ -10,7 +9,7 @@ const Headermain = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen); 
+    setMenuOpen(!menuOpen);
     document.body.classList.toggle("ovhidden");
   };
 
@@ -51,12 +50,10 @@ const Headermain = () => {
                 </Link>
               </li>
             </ul>
-            <Themetoggle />
           </nav>
 
           {/* Mobile controls */}
           <div className="d-flex d-md-none align-items-center">
-            <Themetoggle />
             <button className="menu__button" onClick={toggleMenu} aria-label="Menu">
               {menuOpen ? <VscClose /> : <VscGrabber />}
             </button>
