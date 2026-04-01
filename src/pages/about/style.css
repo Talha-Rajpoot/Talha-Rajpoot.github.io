@@ -1,0 +1,177 @@
+/* ===== Section spacing ===== */
+.sec_sp {
+    margin-bottom: 48px;
+}
+
+@media (min-width: 768px) {
+    .sec_sp {
+        margin-bottom: 64px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .sec_sp {
+        margin-bottom: calc(3rem + 5.128vw);
+    }
+}
+
+/* ===== Page heading ===== */
+.About-header .display-4 {
+    font-size: clamp(36px, 8vw, 80px);
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+@media (min-width: 768px) {
+    .About-header .display-4 {
+        letter-spacing: 3px;
+    }
+}
+
+.t_border {
+    border-color: var(--border-subtle) !important;
+    opacity: 1;
+}
+
+/* ===== Table ===== */
+.table td,
+.table th {
+    color: var(--text-color);
+    padding: 12px 8px;
+    font-size: 13px;
+    border-color: var(--border-subtle);
+    transition: background 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .table td,
+    .table th {
+        padding: 16px 12px;
+        font-size: 15px;
+    }
+}
+
+.table tr:hover td,
+.table tr:hover th {
+    background: var(--card-bg);
+}
+
+.table th {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.table td {
+    color: var(--text-muted);
+}
+
+/* ===== Skills ===== */
+.progress-title {
+    font-size: 12px;
+    font-weight: 600;
+    margin: 12px 0 10px;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-color);
+}
+
+@media (min-width: 768px) {
+    .progress-title {
+        font-size: 13px;
+        margin: 16px 0 12px;
+    }
+}
+
+.progress {
+    height: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 9999px;
+    box-shadow: none;
+    margin-bottom: 20px;
+    overflow: visible;
+}
+
+@media (min-width: 768px) {
+    .progress {
+        margin-bottom: 24px;
+    }
+}
+
+.progress .progress-bar {
+    position: relative;
+    background: var(--accent-gradient);
+    animation: animate-positive 2s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow: visible;
+    border-radius: 9999px;
+}
+
+.progress .progress-value {
+    position: absolute;
+    top: -26px;
+    right: 0;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--text-color-3);
+    font-family: 'Inter', sans-serif;
+}
+
+@media (min-width: 768px) {
+    .progress .progress-value {
+        top: -28px;
+        font-size: 13px;
+    }
+}
+
+@keyframes animate-positive {
+    0% { width: 0%; }
+}
+
+/* ===== Section titles ===== */
+.section-title {
+    font-size: clamp(28px, 5vw, 58px);
+}
+
+.color_sec.py-4 {
+    font-size: clamp(20px, 3vw, 32px);
+    letter-spacing: 2px;
+}
+
+/* ===== Services ===== */
+.service__title {
+    padding: 10px 0;
+    border-bottom: solid 1px var(--border-subtle);
+    transition: border-color 0.3s ease, padding-left 0.3s ease, color 0.3s ease;
+    font-size: clamp(16px, 2vw, 24px);
+    letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+    .service__title {
+        padding: 12px 0;
+    }
+}
+
+.service_:hover .service__title {
+    padding-left: 12px;
+    border-color: var(--text-color-3);
+    color: var(--text-color-3);
+}
+
+.service_desc {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+@media (min-width: 768px) {
+    .service_desc {
+        font-size: 15px;
+    }
+}
+
+.service-section .service-category-title {
+    padding-bottom: 4px;
+}
