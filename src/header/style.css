@@ -82,38 +82,47 @@
     font-family: 'Inter', sans-serif;
     font-size: 11px;
     font-weight: 600;
-    padding: 14px 14px;
+    padding: 8px 16px;
+    margin: 4px 0;
     display: inline-block;
     position: relative;
-    transition: color 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     letter-spacing: 0.08em;
     text-transform: uppercase;
-}
-
-.nav__links li a::after {
-    content: '';
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%) scaleX(0);
-    width: 16px;
-    height: 2px;
-    background: var(--text-color-3);
-    transition: transform 0.18s ease;
-    border-radius: 1px;
+    border-radius: 9999px;
+    background: transparent;
+    border: 1px solid transparent;
 }
 
 .nav__links li a:hover {
     color: var(--text-color);
-}
-
-.nav__links li a:hover::after,
-.nav__links li a.active::after {
-    transform: translateX(-50%) scaleX(1);
+    background: var(--card-bg);
+    border-color: var(--border-subtle);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    transform: translateY(-1px);
 }
 
 .nav__links li a.active {
     color: var(--text-color-3);
+    background: rgba(227, 255, 57, 0.08);
+    border-color: rgba(227, 255, 57, 0.2);
+    box-shadow: 0 2px 12px rgba(227, 255, 57, 0.1),
+                0 4px 8px rgba(0, 0, 0, 0.15),
+                inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="light"] .nav__links li a:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08),
+                inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+[data-theme="light"] .nav__links li a.active {
+    background: rgba(90, 138, 0, 0.1);
+    border-color: rgba(90, 138, 0, 0.2);
+    box-shadow: 0 2px 12px rgba(90, 138, 0, 0.1),
+                0 4px 8px rgba(0, 0, 0, 0.06),
+                inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
 /* ===== Mobile Hamburger Button ===== */
@@ -182,14 +191,42 @@
     letter-spacing: 4px;
     color: var(--text-muted);
     text-decoration: none;
-    transition: color 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     line-height: 1.2;
+    padding: 8px 28px;
+    border-radius: 16px;
+    border: 1px solid transparent;
 }
 
-.mobile__menu-nav a:hover,
+.mobile__menu-nav a:hover {
+    color: var(--text-color);
+    background: var(--card-bg);
+    border-color: var(--border-subtle);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25),
+                inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    transform: translateY(-2px);
+}
+
 .mobile__menu-nav a.active {
     color: var(--text-color-3);
-    transform: scale(1.05);
+    background: rgba(227, 255, 57, 0.08);
+    border-color: rgba(227, 255, 57, 0.2);
+    box-shadow: 0 4px 20px rgba(227, 255, 57, 0.12),
+                0 6px 12px rgba(0, 0, 0, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="light"] .mobile__menu-nav a:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08),
+                inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+[data-theme="light"] .mobile__menu-nav a.active {
+    background: rgba(90, 138, 0, 0.1);
+    border-color: rgba(90, 138, 0, 0.2);
+    box-shadow: 0 4px 20px rgba(90, 138, 0, 0.1),
+                0 6px 12px rgba(0, 0, 0, 0.06),
+                inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
 /* ===== Border frame — hidden ===== */
