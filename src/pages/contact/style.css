@@ -157,3 +157,35 @@ address a {
 address a:hover {
     opacity: 0.7;
 }
+
+/* ===== Alert messages ===== */
+.co_alert {
+    border-radius: 12px !important;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+}
+
+.co_alert.alert-success {
+    background: rgba(227, 255, 57, 0.1);
+    color: var(--text-color-3);
+    border: 1px solid rgba(227, 255, 57, 0.3);
+}
+
+.co_alert.alert-danger {
+    background: rgba(255, 59, 59, 0.1);
+    color: #ff3b3b;
+    border: 1px solid rgba(255, 59, 59, 0.3);
+}
+
+[data-theme="light"] .co_alert.alert-success {
+    background: rgba(90, 138, 0, 0.1);
+    border-color: rgba(90, 138, 0, 0.3);
+}
+
+[data-theme="light"] .co_alert.alert-danger {
+    background: rgba(200, 30, 30, 0.1);
+    color: #c81e1e;
+    border-color: rgba(200, 30, 30, 0.3);
+}
