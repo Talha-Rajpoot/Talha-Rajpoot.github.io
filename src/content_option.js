@@ -77,7 +77,7 @@ const services = [
 
 const dataportfolio = [
   {
-    img: "https://picsum.photos/600/400?random=1",
+    img: require("./assets/images/Gemini_Generated_Image_q61bo2q61bo2q61b.png"),
     title: "RPPA App",
     description:
       "A comprehensive mobile application with real-time data management, user authentication, and seamless cross-platform experience.",
