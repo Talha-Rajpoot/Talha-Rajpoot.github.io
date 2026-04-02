@@ -93,7 +93,7 @@ const dataportfolio = [
     link: "#",
   },
   {
-    img: "https://picsum.photos/600/400?random=3",
+    img: require("./assets/images/Gemini_Generated_Image_thh471thh471thh4.png"),
     title: "Diet App",
     description:
       "Health and nutrition tracking app with personalized meal plans, calorie counter, progress monitoring, and dietary recommendations.",
