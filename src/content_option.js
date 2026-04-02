@@ -85,7 +85,7 @@ const dataportfolio = [
     link: "#",
   },
   {
-    img: "https://picsum.photos/600/400?random=2",
+    img: require("./assets/images/Gemini_Generated_Image_i87pg8i87pg8i87p.png"),
     title: "ICore Career Hub App",
     description:
       "Career management platform connecting job seekers with opportunities, featuring profile building, job matching, and application tracking.",
