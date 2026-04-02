@@ -101,7 +101,7 @@ const dataportfolio = [
     link: "#",
   },
   {
-    img: "https://picsum.photos/600/400?random=4",
+    img: require("./assets/images/Gemini_Generated_Image_pnkhnmpnkhnmpnkh.png"),
     title: "Africa Travel Hub App",
     description:
       "Travel companion app for exploring Africa with destination guides, booking integration, itinerary planning, and local experiences.",
@@ -116,14 +116,14 @@ const dataportfolio = [
     tags: ["Flutter", "FastAPI", "Brilliant Directory"],
     link: "#",
   },
-  {
-    img: "https://picsum.photos/600/400?random=6",
-    title: "Karim Admin Panel",
-    description:
-      "Feature-rich admin dashboard with analytics, user management, content moderation, and real-time reporting capabilities.",
-    tags: ["Flutter", "Strapi", "node.js"],
-    link: "#",
-  },
+  // {
+  //   img: "https://picsum.photos/600/400?random=6",
+  //   title: "Karim Admin Panel",
+  //   description:
+  //     "Feature-rich admin dashboard with analytics, user management, content moderation, and real-time reporting capabilities.",
+  //   tags: ["Flutter", "Strapi", "node.js"],
+  //   link: "#",
+  // },
 ];
 
 const contactConfig = {
