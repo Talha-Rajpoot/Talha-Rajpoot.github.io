@@ -109,7 +109,7 @@ const dataportfolio = [
     link: "#",
   },
   {
-    img: "https://picsum.photos/600/400?random=5",
+    img: require("./assets/images/Gemini_Generated_Image_ac1x91ac1x91ac1x.png"),
     title: "Hit Local Hub App",
     description:
       "Local business discovery platform connecting users with nearby services, reviews, deals, and community engagement features.",
