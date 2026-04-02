@@ -139,10 +139,9 @@ const contactConfig = {
 };
 
 const socialprofils = {
-  github: "https://github.com",
-  facebook: "https://facebook.com",
-  linkedin: "https://linkedin.com",
-  twitter: "https://twitter.com",
+  github: "https://github.com/Talha-Rajpoot",
+  facebook: "https://www.facebook.com/share/17pkSvd9sm/",
+  linkedin: "https://www.linkedin.com/in/muhammad-talha-082184278",
 };
 export {
   meta,
