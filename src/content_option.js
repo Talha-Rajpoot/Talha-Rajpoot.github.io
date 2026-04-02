@@ -81,7 +81,7 @@ const dataportfolio = [
     title: "RPPA App",
     description:
       "A comprehensive mobile application with real-time data management, user authentication, and seamless cross-platform experience.",
-    tags: ["Flutter", "Node.js", "Firebase"],
+    tags: ["Flutter", "Brilliant directory", "Firebase"],
     link: "#",
   },
   {
@@ -89,7 +89,7 @@ const dataportfolio = [
     title: "ICore Career Hub App",
     description:
       "Career management platform connecting job seekers with opportunities, featuring profile building, job matching, and application tracking.",
-    tags: ["React Native", "FastAPI", "PostgreSQL"],
+    tags: ["React Native", "Strapi", "PostgreSQL"],
     link: "#",
   },
   {
@@ -97,7 +97,7 @@ const dataportfolio = [
     title: "Diet App",
     description:
       "Health and nutrition tracking app with personalized meal plans, calorie counter, progress monitoring, and dietary recommendations.",
-    tags: ["Flutter", "Dart", "Firebase"],
+    tags: ["Flutter", "Dart", "Strapi"],
     link: "#",
   },
   {
@@ -105,7 +105,7 @@ const dataportfolio = [
     title: "Africa Travel Hub App",
     description:
       "Travel companion app for exploring Africa with destination guides, booking integration, itinerary planning, and local experiences.",
-    tags: ["React Native", "Node.js", "MongoDB"],
+    tags: ["Flutter", "Python", "FastAPI"],
     link: "#",
   },
   {
@@ -113,7 +113,7 @@ const dataportfolio = [
     title: "Hit Local Hub App",
     description:
       "Local business discovery platform connecting users with nearby services, reviews, deals, and community engagement features.",
-    tags: ["Flutter", "FastAPI", "WebSocket"],
+    tags: ["Flutter", "FastAPI", "Brilliant Directory"],
     link: "#",
   },
   {
@@ -121,7 +121,7 @@ const dataportfolio = [
     title: "Karim Admin Panel",
     description:
       "Feature-rich admin dashboard with analytics, user management, content moderation, and real-time reporting capabilities.",
-    tags: ["React", "Node.js", "Chart.js"],
+    tags: ["Flutter", "Strapi", "node.js"],
     link: "#",
   },
 ];
