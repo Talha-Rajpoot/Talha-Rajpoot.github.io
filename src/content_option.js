@@ -8,9 +8,9 @@ const meta = {
 const introdata = {
   title: "I’m Muhammad Talha",
   animated: {
-    first: "I love coding",
-    second: "I code cool websites",
-    third: "I develop mobile apps",
+    first: "Mobile App Developer",
+    second: "Full Stack Engineer",
+    third: "Flutter & React Native",
   },
   description:
     "Full Stack Mobile App Developer specializing in Flutter and React Native, with a strong backend foundation in Node.js and Python FastAPI. I build performant, cross-platform mobile experiences powered by scalable and modern server-side architectures.",
