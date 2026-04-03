@@ -82,7 +82,7 @@ const dataportfolio = [
     description:
       "A comprehensive mobile application with real-time data management, user authentication, and seamless cross-platform experience.",
     tags: ["Flutter", "Brilliant directory", "Firebase"],
-    link: "#",
+    link: "https://play.google.com/store/apps/details?id=com.app.rppa&hl=en",
   },
   {
     img: require("./assets/images/Gemini_Generated_Image_i87pg8i87pg8i87p.png"),
@@ -90,7 +90,7 @@ const dataportfolio = [
     description:
       "Career management platform connecting job seekers with opportunities, featuring profile building, job matching, and application tracking.",
     tags: ["React Native", "Strapi", "PostgreSQL"],
-    link: "#",
+    link: "https://play.google.com/store/apps/details?id=com.icorecareerhub&hl=en",
   },
   {
     img: require("./assets/images/Gemini_Generated_Image_thh471thh471thh4.png"),
@@ -98,7 +98,7 @@ const dataportfolio = [
     description:
       "Health and nutrition tracking app with personalized meal plans, calorie counter, progress monitoring, and dietary recommendations.",
     tags: ["Flutter", "Dart", "Strapi"],
-    link: "#",
+    link: "https://play.google.com/store/apps/details?id=com.biotin.diet_app&hl=en",
   },
   {
     img: require("./assets/images/Gemini_Generated_Image_pnkhnmpnkhnmpnkh.png"),
@@ -106,7 +106,7 @@ const dataportfolio = [
     description:
       "Travel companion app for exploring Africa with destination guides, booking integration, itinerary planning, and local experiences.",
     tags: ["Flutter", "Python", "FastAPI"],
-    link: "#",
+    link: "https://africatravelhub.com/login",
   },
   {
     img: require("./assets/images/Gemini_Generated_Image_ac1x91ac1x91ac1x.png"),
@@ -114,7 +114,7 @@ const dataportfolio = [
     description:
       "Local business discovery platform connecting users with nearby services, reviews, deals, and community engagement features.",
     tags: ["Flutter", "FastAPI", "Brilliant Directory"],
-    link: "#",
+    link: "https://www.hitlocalhub.com.au/",
   },
   // {
   //   img: "https://picsum.photos/600/400?random=6",
