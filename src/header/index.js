@@ -36,7 +36,7 @@ const Headermain = () => {
               </li>
               <li>
                 <Link to="/portfolio" className={location.pathname === "/portfolio" ? "active" : ""}>
-                  Portfolio
+                  Projects
                 </Link>
               </li>
               <li>
@@ -68,7 +68,7 @@ const Headermain = () => {
             Home
           </Link>
           <Link to="/portfolio" onClick={closeMenu} className={location.pathname === "/portfolio" ? "active" : ""}>
-            Portfolio
+            Projects
           </Link>
           <Link to="/about" onClick={closeMenu} className={location.pathname === "/about" ? "active" : ""}>
             About
