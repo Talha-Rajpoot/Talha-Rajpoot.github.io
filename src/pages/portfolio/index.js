@@ -10,7 +10,7 @@ export const Portfolio = () => {
       <div className="portfolio-3d">
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Portfolio | {meta.title}</title>
+          <title>Projects | {meta.title}</title>
           <meta name="description" content={meta.description} />
         </Helmet>
 
@@ -21,7 +21,7 @@ export const Portfolio = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            Portfolio
+            Projects
           </motion.h1>
           <motion.p
             className="portfolio-3d__subtitle"
