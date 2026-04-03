@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0b82b678.css",
-    "main.js": "/static/js/main.0facf3f7.js",
+    "main.js": "/static/js/main.d2f5f697.js",
     "static/media/Gemini_Generated_Image_pnkhnmpnkhnmpnkh.png": "/static/media/Gemini_Generated_Image_pnkhnmpnkhnmpnkh.0329bfde8a709d54256a.png",
     "static/media/Gemini_Generated_Image_ac1x91ac1x91ac1x.png": "/static/media/Gemini_Generated_Image_ac1x91ac1x91ac1x.f04f8a5c389f2f29789b.png",
     "static/media/Gemini_Generated_Image_i87pg8i87pg8i87p.png": "/static/media/Gemini_Generated_Image_i87pg8i87pg8i87p.9fc188151dcc75e69bb8.png",
@@ -12,6 +12,6 @@
   },
   "entrypoints": [
     "static/css/main.0b82b678.css",
-    "static/js/main.0facf3f7.js"
+    "static/js/main.d2f5f697.js"
   ]
 }
